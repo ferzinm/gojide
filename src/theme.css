@@ -1,0 +1,976 @@
+/* FRONTEND CSS GLOBAL SETTINGS
+*********************************************/
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    padding: 0;
+}
+
+body#iframe {
+    background-color: #fff;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 940px;
+}
+
+a {
+    color: #069;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+h2 {
+    font-weight: 600;
+    color: #069;
+    font-size: 30px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+h2.with-subheading {
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.quote {
+    font: 20px/30px 'Libre Baskerville', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.splitter {
+    background-color: #E3E3E3;
+    height: 1px;
+    margin: 23px auto 26px;
+    width: 100px;
+}
+
+.bottomline {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 70px;
+}
+
+.subheading {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.shadow {
+    -webkit-transition: box-shadow 200ms linear;
+    -moz-transition: box-shadow 200ms linear;
+    -o-transition: box-shadow 200ms linear;
+    transition: box-shadow 200ms linear;
+    box-shadow: 2px 2px 5px #d2d2d2;
+}
+
+.shadow:hover {
+    -webkit-transition: box-shadow 200ms linear;
+    -moz-transition: box-shadow 200ms linear;
+    -o-transition: box-shadow 200ms linear;
+    transition: box-shadow 200ms linear;
+    box-shadow: 0px 0px 2px #eaeaea;
+}
+
+/* LAYOUT
+*********************************************/
+/* Floats */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.ie7 .group {
+    zoom: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+/* SPRITE
+*********************************************/
+
+.sprite {
+    background: url('../images/sprite1.png') no-repeat top left transparent;
+}
+
+/* social icons */
+
+.social-icon {
+    height: 16px;
+    width: 16px;
+    background: url('../images/sprite1.png') no-repeat top left transparent;
+    display: inline-block;
+}
+
+.social-icon.linkedin {
+    background-position: -427px -462px;
+}
+
+.social-icon.linkedin:hover {
+    background-position: -427px -480px;
+}
+
+.social-icon.twitter {
+    background-position: -500px -462px;
+}
+
+.social-icon.twitter:hover {
+    background-position: -500px -480px;
+}
+
+.social-icon.facebook {
+    background-position: -542px -462px;
+}
+
+.social-icon.facebook:hover {
+    background-position: -542px -480px;
+}
+
+.social-icon.xing {
+    background-position: -462px -462px;
+}
+
+.social-icon.xing:hover {
+    background-position: -462px -480px;
+}
+
+.social-icon.gplus {
+    background-position: -710px -462px;
+}
+
+.social-icon.gplus:hover {
+    background-position: -710px -480px;
+}
+
+.social-icon.flickr {
+    background-position: -750px -462px;
+}
+
+.social-icon.flickr:hover {
+    background-position: -750px -480px;
+}
+
+/* Buttons
+*********************************************/
+
+.button-big {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+    display: block;
+    border: 2px solid #fff;
+    background-color: #fff;
+    height: 76px;
+    width: 295px;
+    box-shadow: 1px 1px 3px #d2d2d2;
+}
+
+.button-big:hover {
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 3px #aaa;
+}
+
+.button-big span {
+    background-position: -909px -456px;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 29px 0 10px 28px;
+}
+
+
+/* Media Queries
+*********************************************/
+/* Retina
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+
+}*/
+/* Landscape phones and down
+@media (max-width: 480px) {
+
+}*/
+/* Landscape phone to portrait tablet
+@media (max-width: 767px) {
+
+}*/
+/* Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 979px) {
+
+}*/
+/* Large desktop
+@media (min-width: 1200px) {
+
+}*/
+
+
+/* Header
+*********************************************/
+
+header, #header {
+    background-color: #fff;
+    text-align: center;
+}
+
+header.bottomline, #header.bottomline {
+    padding-bottom: 0;
+}
+
+header {
+    height: 255px;
+}
+
+#claim {
+    margin: 96px 80px;
+}
+
+nav {
+    font-size: 18px;
+    color: #999;
+    box-shadow: 0 1px 1px #EAEAEA;
+}
+
+#header .menu-item {
+    float: left;
+    padding: 40px 30px 44px;
+    text-decoration: none;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#header .menu-item:hover {
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    background-color: #E3E3E3;
+    color: #666;
+}
+
+#header li.current .menu-item {
+    background-color: #999;
+    color: #f0f0f0;
+/ / font-weight: 600;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+#logo {
+    padding: 32px 18px 0;
+
+}
+
+#scroll-nav, #no-scroll-nav {
+    margin: 0;
+}
+
+#scroll-nav li, #no-scroll-nav li {
+    float: left;
+    list-style-type: none;
+}
+
+#header.sticky #logo {
+    padding: 8px 18px 0;
+}
+
+#header.sticky #logo img {
+    height: 25px;
+}
+
+nav a {
+    color: #999;
+}
+
+body.sticky section {
+    margin-top: 120px;
+}
+
+#header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#header.sticky .menu-item {
+    padding: 10px 30px;
+}
+
+/* CONTENT - Ãœber uns
+*********************************************/
+.row {
+    text-align: center;
+}
+.row .span4 {
+    width: 293px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#ueber-uns {
+    text-align: center;
+}
+
+.gruenden, .investieren, .restrukturieren {
+    height: 180px;
+    margin: 10px 60px 0;
+}
+
+.gruenden {
+    background-position: -983px 57px;
+}
+
+.investieren {
+    background-position: -830px 22px;
+}
+
+.restrukturieren {
+    background-position: -663px 53px;
+}
+
+#ueber-uns .span4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* CONTENT - "Team"
+*********************************************/
+
+.gallery {
+    margin: 46px 0 100px;
+    text-align: center;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+.portrait {
+    /*float: left;*/
+    display: inline-block;
+    color: #069;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.portrait .sprite, .portrait-top .sprite {
+    width: 150px;
+    height: 150px;
+}
+
+.portrait .border, .portrait-top .border {
+    padding: 5px;
+    background-color: #fff;
+    width: 150px;
+    margin: 0 37px 27px;
+    cursor: pointer;
+}
+
+.danielG .sprite {
+    background-position: 0 0;
+}
+
+.danielS .sprite {
+    background-position: -495px 0;
+}
+
+.sven .sprite {
+    background-position: -166px 0;
+}
+
+.fabian .sprite {
+    background-position: -330px 0;
+}
+
+.gesamt .sprite {
+    /*background: url("../images/website/team.jpg") no-repeat scroll 0 0 transparent;*/
+    width: 940px;
+    height: 388px;
+    margin-bottom: -70px;
+    margin-top: 25px;
+}
+
+/* CONTENT - Portfolio
+*********************************************/
+
+.company {
+    padding: 5px;
+    background-color: #fff;
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.company.center {
+    margin: 0 80px;
+}
+
+.company .sprite {
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.ueber-uns .gallery {
+    margin-bottom: 80px;
+}
+
+.gallery.last {
+    margin: 3px 0 15px;
+}
+
+.company .gbv {
+    background-position: 0px -168px;
+}
+
+.company .emporis {
+    background-position: -235px -169px;
+}
+
+.company .ics {
+    background-position: -487px -164px;
+}
+
+.company .getgo {
+    background-position: -700px -166px;
+}
+
+.company .unique {
+    background-position: 4px -287px;
+}
+
+.company .dialo {
+    background-position: -191px -292px;
+}
+
+.company .northworks {
+    background-position: -420px -294px;
+}
+
+.company .verwandt {
+    background-position: 5px -412px;
+}
+
+.company .farbflut {
+    background-position: -657px -293px;
+}
+
+/* CONTENT - Jobs
+*********************************************/
+
+.sprite.jobs, .sprite.gruende {
+    height: 120px;
+    margin: 10px 40px 20px;
+}
+
+.sprite.jobs {
+    background-position: -928px -289px;
+}
+
+
+.sprite.gruende {
+    background-position: -948px -167px;
+}
+
+.dual-center {
+    margin: 0 auto;
+    width: 684px;
+}
+
+/* CONTENT - Presse
+*********************************************/
+
+.presse .subheading {
+    padding: 40px 0;
+}
+
+/* CONTENT - Kontakt
+*********************************************/
+
+.map {
+    background-color: #FFFFFF;
+    padding: 5px;
+    box-shadow: 1px 1px 3px #d2d2d2;
+    margin: 40px auto 0;
+    max-width: 940px;
+    height: 264px;
+    /*float: left;*/
+}
+.map iframe {
+    margin: 0 auto;
+}
+
+.address {
+    float: left;
+    padding: 20px 25px;
+}
+
+.third {
+    float: left;
+    width: 293px;
+    font-size: 16px;
+}
+
+.address .sprite {
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.sprite.marker {
+    background-position: -587px -457px;
+}
+
+.sprite.phone {
+    background-position: -625px -455px;
+}
+
+.sprite.mail {
+    background-position: -667px -456px;
+}
+
+.address .mailprotect a {
+    text-align: right;
+}
+
+.address .mailprotect span {
+    display: inline-block;
+}
+
+.address .mailprotect {
+    text-align: right;
+}
+
+/* F A N C Y B O X E N
+*********************************************/
+
+#fancybox-content {
+    border: 1px solid #e3e3e3 !important;
+    box-shadow: 2px 2px 5px #D2D2D2;
+}
+
+.fancybox-bg {
+    display: none !important;
+}
+
+/*    TEAM - Portrait
+*********************************************
+*/
+
+.portrait-heading {
+    width: auto;
+    overflow: hidden;
+}
+
+.portrait-content {
+    padding: 40px 40px 60px;
+    width: 860px;
+}
+
+.portrait-top .border.shadow:hover {
+    cursor: default;
+    box-shadow: 2px 2px 5px #d2d2d2;
+}
+
+.portrait-content .border {
+    margin: 0 70px 40px 230px;
+    float: left;
+}
+
+.portrait-heading h3 {
+    color: #006699;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 5px;
+    padding-top: 32px;
+}
+
+.portrait-heading h3.zweizeilig {
+    padding-top: 12px;
+}
+
+.portrait-sub {
+    font: italic 16px/20px 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+.portrait-split {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0 4px;
+    letter-spacing: 1px;
+}
+
+.portrait-content .splitter, .details-content .splitter, .splitter.big {
+    width: 300px;
+}
+
+.portrait-description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 400px;
+}
+
+.sprite.portrait-close {
+    background-position: -301px -462px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: -12px -12px 0 0;
+    width: 20px;
+}
+
+/*    PORTFOLIO - Portrait
+*********************************************
+*/
+
+.portrait-top .company {
+    height: 150px;
+    padding: 5px;
+    width: 250px;
+    float: left;
+    margin: 0 70px 40px 130px;
+    box-shadow: 2px 2px 5px #D2D2D2;
+    cursor: default;
+}
+
+.portrait-top .company .sprite {
+    width: auto;
+}
+
+.portrait-link {
+    font-size: 18px;
+    display: block;
+    padding: 10px 0 6px;
+}
+
+.portrait-description.short {
+    float: left;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 100%;
+}
+
+.portrait-description.short div {
+    float: right;
+    padding-left: 70px;
+    text-align: left;
+    width: 400px;
+}
+
+.portrait-description.short span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.portrait-heading h3.short {
+    padding-top: 50px;
+}
+
+/*    JOBS Overview
+*********************************************
+*/
+
+.teaser-images img {
+    margin: 40px auto 0;
+    display: block;
+}
+
+.jobs-overview .sprite.job-close {
+    margin: 25px 25px 0 0;
+    background-position: -301px -462px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+.job-list {
+    width: 360px;
+    margin-bottom: 60px;
+}
+
+.job-list.left {
+    padding-left: 40px;
+}
+
+.job-list.right {
+    padding-right: 40px;
+}
+
+.job-list h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 40px 0 20px;
+}
+
+.job-list a {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+}
+
+/*    JOBS Details
+*********************************************
+*/
+
+.details-top {
+    border-bottom: 1px solid #E3E3E3;
+    float: left;
+    padding: 30px;
+    width: 880px;
+}
+
+.sprite.back-button {
+    background-position: -1175px -16px;
+    float: left;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.details-top .sprite.job-close {
+    background-position: -301px -462px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    margin: 0;
+    width: 20px;
+    display: none;
+}
+
+.details-content {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.details-content h2 {
+    font-size: 24px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+.details-content .subheading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details-content h3 {
+    font-weight: 600;
+    letter-spacing: 0;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.details-content ul {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.details-content ul li {
+    margin-bottom: 12px;
+}
+
+b {
+    font-weight: 600;
+}
+
+.job-footer {
+    border-top: 1px solid #E3E3E3;
+    font-size: 16px;
+    padding: 35px 170px 20px;
+    line-height: 24px;
+    margin-top: 50px;
+}
+
+.sprite.pdf {
+    background-position: -342px -461px;
+    display: inline-block;
+    height: 18px;
+    margin-right: 10px;
+    width: 18px;
+}
+
+/*    GrÃ¼nde fÃ¼r uns
+*********************************************
+*/
+
+#gruende {
+    width: 940px;
+    margin-bottom: 60px;
+}
+
+#gruende .portrait-close {
+    margin: 15px 25px 0 0;
+}
+
+.grund {
+    width: 700px;
+    margin: 50px auto;
+}
+
+.grund img {
+    width: 150px;
+    height: 110px;
+    padding: 5px;
+    float: left;
+    box-shadow: 2px 2px 5px #D2D2D2;
+}
+
+.grund h3 {
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 5px 0 0 40px;
+    width: auto;
+}
+
+.grund p {
+    font-size: 16px;
+    overflow: hidden;
+    padding: 0 0 0 40px;
+    width: auto;
+    line-height: 24px;
+}
+
+/*    FOOTER
+*********************************************
+*/
+
+.footer {
+    padding: 25px 0 30px;
+}
+
+.footer .bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+footer .subheading {
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+
+.container {
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header .container {
+    width: 940px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 1170px;
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        *zoom: 1;
+    }
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background: #fff;
+    box-shadow: #999 0px 0px 5px 1px;
+    width: 940px;
+    left: calc((100% - 940px)/2);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.modal.is-open {
+    display: block;
+}
